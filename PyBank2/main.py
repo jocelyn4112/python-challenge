@@ -14,7 +14,7 @@ with open(output_path) as csvfile:
     #with open(output_file, "w") as datafile:
      #   writer = csv.writer(datafile)
 
-      #  writer.writerow(["Index", "Employee", "Department"])
+      #  writer.writerow(["", "", t"])
 
        # writer.writerows(roster)
 
@@ -36,8 +36,8 @@ with open(output_path) as csvfile:
    
     for "Profit/Loss" in csvreader:
 
-
-    # M2-M1/M1   
+    # M2-M1/M1 
+    #   #Make 2 lists and zip together? Can I use blank lists from above?   
     .append 
    #Greatest increase 
     #max
