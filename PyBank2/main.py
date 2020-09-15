@@ -1,30 +1,26 @@
+# Import files 
 import os
 import csv
 
+#Open CSV Files
 output_path = os.path.join("Resources", "budget_data.csv")
 with open(output_path) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
     header=rows[0:]
-     w.writerow(['Date', 'Profit/Loss'])
+    w.writerow(['Date', 'Profit/Loss'])
     for data in budget_data.csv :
         w.writerow(data)
 # Printing the header?
     csv_header = next(csvreader)
     print(f"CSV Header: {csv_header}")
-    #with open(output_file, "w") as datafile:
-     #   writer = csv.writer(datafile)
-
-      #  writer.writerow(["", "", t"])
-
-       # writer.writerows(roster)
-
-        # print(csvreader)
+    
 # start with blank lists  - How to make sure it is pulling data?
     Date = []
     Profit/Loss = []
-
+    Total_Rev = []
+    Change_In_Rev = []
    #for total months *How to add in date column?
-   months = len(csvreader)
+   Date = len(csvreader)
 
    #total P/L
    # sum 
@@ -45,7 +41,7 @@ with open(output_path) as csvfile:
     #Greatest Decrease
     #min
     min(*)
-git 
+    
 
 
 

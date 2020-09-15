@@ -9,6 +9,7 @@ with open(output_path) as csvfile:
 
     csv_header = next(csvreader)
     print(f"CSV Header: {csv_header}")
+    
     Total_votes = 0
     total_candidates = []
     candidate_votes = []
@@ -22,9 +23,9 @@ with open(output_path) as csvfile:
         #Sum each cannidates votes
 
         #Divide by total votes
-                /Total_votes
+               # /Total_votes
     #total muber for votes for each canidate 
-     for row in csvreader:
+    for row in csvreader:
         if row[0] == canidate:
             Total =+ 1
          #Sum Canidates A,B,C
