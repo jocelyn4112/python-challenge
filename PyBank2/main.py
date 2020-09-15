@@ -5,12 +5,10 @@ import statistics
 
 #Open CSV Files
 output_path = os.path.join("Resources", "budget_data.csv")
+# open csv file
 with open(output_path) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
-    header=rows[0:]
-    w.writerow(['Date', 'Profit/Loss'])
-    for data in budget_data.csv :
-        w.writerow(data)
+    print(csvreader)
 # Printing the header?
     csv_header = next(csvreader)
     print(f"CSV Header: {csv_header}")
@@ -22,7 +20,7 @@ with open(output_path) as csvfile:
     Total_Rev = 0
     Delta = []
  #for total months *How to add in date column?
-   Total_Months = len(csvreader)
+Total_Months = len(csvreader)
 #total P/L
 # sum 
     total = 0
