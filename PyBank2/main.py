@@ -9,9 +9,9 @@ output_path = os.path.join("Resources", "budget_data.csv")
 with open(output_path) as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
     print(csvreader)
-# Printing the header?
-    csv_header = next(csvreader)
-    print(f"CSV Header: {csv_header}")
+# if printing the header
+    #csv_header = next(csvreader)
+    #print(f"CSV Header: {csv_header}")
     
 # start with blank lists  - How to make sure it is pulling data?
     Date = []
@@ -19,41 +19,39 @@ with open(output_path) as csvfile:
     Rev2 = []
     Total = 0
     Delta = []
- #for total months *How to add in date column?
+#For number of months - total length of months 
 Total_Months = len(csvreader)
-#total P/L
-#Total Revenue 
-  
+
+#Total Revenue - sum of revenu
 for "Profit/Loss" in csvreader:  
          total += 1
-print(total)
-    #Sum of Revenue
+#or
+Total = sum(Rev1)
+print(total)   
 
-   # Average Change
-   
+# Average Change - calcualte the delta/month and average.    
 for "Profit/Loss" in csvreader:
     Rev1 = []
     Rev2 = []
     Delta = [Rev2[i]-Rev1[i] for i in xrange(min(len(Rev1), len(Rev2)))]
-    print (Delta)
+    
+    #print (Delta)
+    average = statistics.mean(Delta)
             
-#for Delta in 'Profit/Loss'
-
-    # M2-M1/M1 
-    #   #Make 2 lists and zip together? Can I use blank lists from above?   
-   # .append 
-   #Greatest increase 
-    #max
-max_change = max(Delta)
-    #Greatest Decrease
-    #min
-min_change = min(Delta)
+#Greatest increase - max / month
+    max_change = max(Delta)
+#Greatest Decrease - min / month
+    min_change = min(Delta)
     
 
 print("Financial Analysis")
 print( "________________________")
-
-
+print(Total_Months)
+print(Total)
+print(Delta)
+print(average)
+print(max_change)
+print(min_change)
 
 
 

@@ -10,31 +10,30 @@ with open(output_path) as csvfile:
 
     csv_header = next(csvreader)
     print(f"CSV Header: {csv_header}")
-    #Or are these lists - what sort of brackets?
-   
+ #Blank Lists and variables 
     total_votes = 0
-   # List of canidates 
+    # List of canidates 
     total_candidate_list = []
-   # Number of votes each canidate recieves 
+    # Number of votes each canidate recieves 
     candidate_votes = []
     Percent_Votes = []
-  #for total votes cast 
-    for Total_votes in csvreader:
-        Total =+ 1
+#for total votes cast 
+for Total_votes in csvreader:
+     Total =+ 1
     #Compiling total canidates and votes - if candidate is not on the list of canidates they and their votes are added on.  
-        if row[2] not in total_candidate_list:      
-            total_candidate_list.append.row[2]
-            index = total_candidate_list.index(row[2])
-            total_votes.append(1)
-        else:
-            index = total_candidate_list.index(row[2])
-            total_votes[index] += 1
-        #print(total_candidate_list)
-        #print(total_votes)
-        #Make Index Canidate List
+    if row[2] not in total_candidate_list:      
+        total_candidate_list.append.row[2]
+        index = total_candidate_list.index(row[2])
+         total_votes.append(1)
+    else:
+        index = total_candidate_list.index(row[2])
+        total_votes[index] += 1
+    print(total_candidate_list)
+    print(total_votes)
+    #Make Index Canidate List
     candidateIndex = candidates.index(row[2])
-        # Index to count of votes for the candidate
-        voteCount[candidateIndex] += 1
+     # Index to count of votes for the candidate
+    total_votes = [candidateIndex] += 1
     #percentage each caniadite won 
         #Sum each cannidates votes - Citation?
        # for votes in total_candidates:
