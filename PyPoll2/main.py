@@ -21,11 +21,11 @@ with open(output_path) as csvfile:
 for Total_votes in csvreader:
      Total =+ 1
     #Compiling total canidates and votes - if candidate is not on the list of canidates they and their votes are added on.  
-    if row[2] not in total_candidate_list:      
+if row[2] not in total_candidate_list:      
         total_candidate_list.append.row[2]
         index = total_candidate_list.index(row[2])
-         total_votes.append(1)
-    else:
+        total_votes.append(1)
+else:
         index = total_candidate_list.index(row[2])
         total_votes[index] += 1
     print(total_candidate_list)

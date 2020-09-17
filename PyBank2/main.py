@@ -37,7 +37,8 @@ for "Profit/Loss" in csvreader:
     
     #print (Delta)
     average = statistics.mean(Delta)
-            
+      #or
+    Average = Delta / Total_Months      
 #Greatest increase - max / month
     max_change = max(Delta)
 #Greatest Decrease - min / month
