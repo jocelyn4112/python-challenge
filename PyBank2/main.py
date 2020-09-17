@@ -23,7 +23,7 @@ with open(output_path) as csvfile:
 Total_Months = len(csvreader)
 
 #Total Revenue - sum of revenu
-for "Profit/Loss" in csvreader:  
+for Rev1 in csvreader:  
          total += 1
 #or
 Total = sum(Rev1)
