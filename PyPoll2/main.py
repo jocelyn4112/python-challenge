@@ -51,7 +51,7 @@ else:
     #winner
    
     
-    print(Total)
+print(Total)
 
 
 
