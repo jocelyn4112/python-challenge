@@ -14,7 +14,7 @@ with open(output_path) as csvfile:
     total_votes = 0
     total_candidate_list = []
     candidate_votes = 0
-    Percent_Votes = 0
+    percent_votes = 0
 #for total votes cast 
 for Total_votes in csvreader:
      Total =+ 1
@@ -23,7 +23,7 @@ if row[2] not in total_candidate_list:
         total_candidate_list.append.row[2]
         index = total_candidate_list.index(row[2])
         total_votes.append(1)
- else:
+else:
         index = total_candidate_list.index(row[2])
         total_votes[index] += 1
 
@@ -39,23 +39,27 @@ if row[2] not in total_candidate_list:
     for votes in total_candidates:
         percentage = (votes/total_votes) * 100
         percentage = round(percentage)
-        percentage = "%.3f%%" % percentage
+        percentage = "%.%%" 
         percent_votes.append(percentage)
-        Divide by total votes
+      
    
    #This is how the tutor suggested I figure this which make smore sense but was only covered in the class before, so I didn't know if I could use it in the homework. 
     #khan_lit = list.loc[candidate  == "khan"]
     #correy_lit = list.loc[candidate  == "correy"] 
     #Li_lit = list.loc[candidate  == "li"]
 
-    
-    sum
-    #winner     
+   for winner in candidate_votes   
+     if vote_count > winner_votes:
+        winner = vote_count
+        winner = 
+        
    
- print(total_candidate_list)
-print(total_votes)   
+print(total_candidate_list)
+print(total_votes) 
+print (total_votes-canidates)  
+print(percent_votes)
 print(Total)
-
+print(winner_votes)
 
 
    
