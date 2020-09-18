@@ -57,12 +57,8 @@ print(candidates_info.keys())
 print(total_votes)
 for canidates in canidates_info.keys():
     print(f'{canidates}: {candidates_info[canidates]["percentage"]} {candidate_info[candidates]["votes"]}')
-
-print (total_votes-canidates)  
-print(percent_votes)
-print(Total)
-print(winner_votes)
-print(winner)
+print(Max_votes)
+print(Winner)
 
 with open('Results.txt', 'a+') as f:
   f.write(ff)  

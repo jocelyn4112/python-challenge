@@ -32,20 +32,20 @@ with open(output_path) as csvfile:
     #print(total)   
 
 # Average Change - calcualte the delta/month and average.    
-for i,row2 in enumerate(csvreader): #this needs ot be named something that refefnces somethwer e- not sure where
-    if i == 0:
-        continue 
-    Rev1 = []
-    Rev2 = []
-    Delta = [Rev2[row[1]]-Rev1[i] for i in xrange(min(len(Rev1), len(Rev2)))] 
+    for i,row2 in enumerate(csvreader): #this needs ot be named something that refefnces somethwer e- not sure where
+        if i == 0:
+            continue 
+        Rev1 = []
+        Rev2 = []
+        Delta = [Rev2[row[1]]-Rev1[i] for i in range(min(len(Rev1), len(Rev2)))] 
     #print (Delta)
-average = statistics.mean(Delta)
+    average = statistics.mean(Delta)
         #or
         # Average = Delta / Total_Months      
     #Greatest increase - max / month
-max_change = max(Delta)
+    max_change = max(Delta)
     #Greatest Decrease - min / month
-min_change = min(Delta)
+    min_change = min(Delta)
     
 
 print("Financial Analysis")
@@ -56,6 +56,17 @@ print(Delta)
 print(average)
 print(max_change)
 print(min_change)
+
+with open ("Results", "w") as f:
+    f.write('Results')
+    f.write( "________________________")
+    print(Total_Months)
+    print(Total)
+    print(Delta)
+    print(average)
+    print(max_change)
+    print(min_change)
+    
 
 
 
