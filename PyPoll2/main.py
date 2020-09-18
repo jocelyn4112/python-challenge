@@ -39,11 +39,6 @@ with open(output_path) as csvfile:
         percentage = "%_._%" ## How to print
         candidates_info[candidate] = {"Votes":votes, "Percentage":percentage}
       
-   
-        #This is how the tutor suggested I figure this which make smore sense but was only covered in the class before, so I didn't know if I could use it in the homework. 
-         #khan_lit = list.loc[candidate  == "khan"]
-         #correy_lit = list.loc[candidate  == "correy"] 
-        #Li_lit = list.loc[candidate  == "li"]
 #Calulating winner 
 Max_vote = 0
 Winner = None
@@ -51,7 +46,7 @@ for candidates in candidates_info.keys():
     if candidates_info[candidates]["Votes"] > Max_vote:
         Winner = candidates
         Max_vote = candidates_info[candidates]["Votes"]
-# Print resuults         
+# Print results         
 print ('Election Results')   
 print("__________________________")
 print(candidates_info.keys())
@@ -59,7 +54,7 @@ print(total_votes)
 for candidates in candidates_info.keys():
     print(f'{candidates}: {candidates_info[candidates]["Percentage"]} {candidates_info[candidates]["Votes"]}')
 print(Max_vote)
-print(Winner)
+print("Winner: " + Winner)
 
 #Write to a text file 
 with open('Results.txt', 'a+') as f:

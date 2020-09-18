@@ -14,7 +14,9 @@ with open(output_path) as csvfile:
 
     # if printing the header
     csv_header = next(csvreader)
-    print("CSV Header:", csv_header)   
+    print("CSV Header:", csv_header) 
+
+    Rev1 = "Profit/Loss" 
 # start with blank lists  - How to make sure it is pulling data?
     Date = []
     Rev1 = []
@@ -41,11 +43,11 @@ with open(output_path) as csvfile:
     
     #average = statistics.mean([Delta])
         #or
-    #Average =[Delta] / [Total_Months]      
+    #average =Delta/ Total_Months     
     #Greatest increase - max / month
     #max_change = max(Delta)
     #Greatest Decrease - min / month
-   # min_change = min(Delta)
+    #min_change = min(Delta)
     
 
 print("Financial Analysis")
@@ -53,9 +55,9 @@ print( "________________________")
 print(Total_Months)
 print(total)
 print(Delta)
-#print(average)
-#print(max_change)
-#print(min_change)
+print(average)
+print(max_change)
+print(min_change)
 
 with open ("Results", "w") as f:
     f.write('Results')
@@ -63,9 +65,9 @@ with open ("Results", "w") as f:
     f.write(Total_Months)
     f.write(Total)
     f.write(Delta)
-    #f.write(average)
-   # f.write(max_change)
-    #f.write(min_change)
+    f.write(average)
+    f.write(max_change)
+    f.write(min_change)
     
 
 
