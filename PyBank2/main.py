@@ -39,23 +39,23 @@ with open(output_path) as csvfile:
         Rev2 = []
         Delta = [Rev2[row[1]]-Rev1[i] for i in range(min(len(Rev1), len(Rev2)))] 
     
-    average = statistics.mean(Delta)
+    #average = statistics.mean([Delta])
         #or
-        # Average = Delta / Total_Months      
+    #Average =[Delta] / [Total_Months]      
     #Greatest increase - max / month
-    max_change = max(Delta)
+    #max_change = max(Delta)
     #Greatest Decrease - min / month
-    min_change = min(Delta)
+   # min_change = min(Delta)
     
 
 print("Financial Analysis")
 print( "________________________")
 print(Total_Months)
-print(Total)
+print(total)
 print(Delta)
-print(average)
-print(max_change)
-print(min_change)
+#print(average)
+#print(max_change)
+#print(min_change)
 
 with open ("Results", "w") as f:
     f.write('Results')
@@ -63,9 +63,9 @@ with open ("Results", "w") as f:
     f.write(Total_Months)
     f.write(Total)
     f.write(Delta)
-    f.write(average)
-    f.write(max_change)
-    f.write(min_change)
+    #f.write(average)
+   # f.write(max_change)
+    #f.write(min_change)
     
 
 
