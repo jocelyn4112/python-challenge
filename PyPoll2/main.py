@@ -40,25 +40,34 @@ with open(output_path) as csvfile:
         canidates_info[canidate] = {"Votes":votes, "Percentage":percentage}
       
    
-   #This is how the tutor suggested I figure this which make smore sense but was only covered in the class before, so I didn't know if I could use it in the homework. 
-    #khan_lit = list.loc[candidate  == "khan"]
-    #correy_lit = list.loc[candidate  == "correy"] 
-    #Li_lit = list.loc[candidate  == "li"]
+        #This is how the tutor suggested I figure this which make smore sense but was only covered in the class before, so I didn't know if I could use it in the homework. 
+         #khan_lit = list.loc[candidate  == "khan"]
+         #correy_lit = list.loc[candidate  == "correy"] 
+        #Li_lit = list.loc[candidate  == "li"]
+#Calulating winner 
 Max_vote = 0
 Winner = None
 for canidates in canidates_info.keys(): 
-    if candidate_info[canidates]["votes"] > Max_vote:
+    if canidates_info[canidates]["Votes"] > Max_vote:
         Winner = canidates
-        Max_vote = candidate_info[canidates]["votes"]
-        
+        Max_vote = canidates_info[canidates]["Votes"]
+# Print resuults         
 print ('Election Results')   
-print(__________________________)
-print(candidates_info.keys())
+print("__________________________")
+print(canidates_info.keys())
 print(total_votes)
 for canidates in canidates_info.keys():
-    print(f'{canidates}: {candidates_info[canidates]["percentage"]} {candidate_info[candidates]["votes"]}')
-print(Max_votes)
+    print(f'{canidates}: {canidates_info[canidates]["Percentage"]} {canidates_info[canidates]["Votes"]}')
+print(Max_vote)
 print(Winner)
 
+#Write to a text file 
 with open('Results.txt', 'a+') as f:
-  f.write(ff)  
+    f.write('Election Results')   
+    f.write("__________________________")
+    f.write(canidates_info)
+    f.write(total_votes)
+for canidates in canidates_info.keys():
+    f.write(f'{canidates}: {canidates_info[canidates]["percentage"]} {candidate_info[candidates]["votes"]}')
+    f.write(Max_votes)
+    f.write(Winner)
