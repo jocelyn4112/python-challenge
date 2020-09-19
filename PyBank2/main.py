@@ -7,17 +7,15 @@ import statistics
 output_path = os.path.join("Resources","budget_data.csv")
 # open csv file
 with open(output_path) as csvfile:
-    csvreader = csv.reader(csvfile)
+    csvreade = csv.reader(csvfile)
  
     #for row in csvreader:
-    #    print(row)
-
     # if printing the header
     csv_header = next(csvreader)
     print("CSV Header:", csv_header) 
 
     Rev1 = "Profit/Loss" 
-# start with blank lists  - How to make sure it is pulling data?
+# start with blank lists 
     Date = []
     Rev1 = []
     Rev2 = []
@@ -43,7 +41,7 @@ with open(output_path) as csvfile:
     
     average = statistics.mean([Delta])
         #or
-    #average = Delta/ Total_Months     
+        #average = Delta/ Total_Months     
     #Greatest increase - max / month
     max_change = max(Delta)
     #Greatest Decrease - min / month
