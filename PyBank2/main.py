@@ -43,7 +43,6 @@ with open(output_path) as csvfile:
     
     average = statistics.mean([Delta])
         #or
-    
     #average = Delta/ Total_Months     
     #Greatest increase - max / month
     max_change = max(Delta)
