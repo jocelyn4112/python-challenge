@@ -2,4 +2,6 @@ Election ResultsElection Results__________________________Election Results______
 __________________________
 {'Correy': {'Votes': 704200, 'Percentage': '%_._%'}, 'Khan': {'Votes': 2218230, 'Percentage': '%_._%'}, 'Li': {'Votes': 492940, 'Percentage': '%_._%'}, "O'Tooley": {'Votes': 105630, 'Percentage': '%_._%'}}3521000O'Tooley: %_._% 1056302218230__________________________KhanElection Results
 __________________________
+{'Correy': {'Votes': 704200, 'Percentage': '20%'}, 'Khan': {'Votes': 2218230, 'Percentage': '63%'}, 'Li': {'Votes': 492940, 'Percentage': '14%'}, "O'Tooley": {'Votes': 105630, 'Percentage': '3%'}}Election Results
+__________________________
 {'Correy': {'Votes': 704200, 'Percentage': '20%'}, 'Khan': {'Votes': 2218230, 'Percentage': '63%'}, 'Li': {'Votes': 492940, 'Percentage': '14%'}, "O'Tooley": {'Votes': 105630, 'Percentage': '3%'}}

@@ -10,14 +10,14 @@ with open(output_path) as csvfile:
 
     csv_header = next(csvreader)
     print(f"CSV Header: {csv_header}")
- #Blank Lists and variables 
+#Blank Lists and variables 
     total_votes = 0
     candidates = []
     total_candidate_list = []
     candidate_votes = 0
     percent_votes = 0
     candidates_info = {}
-   # Creating candidate list
+# Creating candidate list
     for i, row in enumerate (csvreader):
         if i == 0: 
             continue
@@ -27,7 +27,7 @@ with open(output_path) as csvfile:
         else:
             candidates_info[candidate_name] = 1
         total_votes = 0
-    #for total votes cast by candidate 
+#for total votes cast by candidate 
     for candidate in candidates_info.keys():
         total_votes += candidates_info[candidate] 
 
@@ -59,7 +59,7 @@ print("Winner: " + Winner)
 #Write to a text file 
 with open('Results.txt', 'a+') as f:
     f.write('Election Results\n')   
-    f.write("__________________________\n")
+    f.write("__________________________")
     f.write(str(candidates_info))+ "\n"
     f.write(str(total_votes)) + "\n"
     f.write(str(f'{candidates}: {candidates_info[candidates]["Percentage"]} {candidates_info[candidates]["Votes"]}')) + "/n"

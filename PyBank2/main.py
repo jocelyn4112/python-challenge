@@ -49,7 +49,7 @@ with open(output_path) as csvfile:
     #Greatest Decrease - min / month
     #min_change = min(Delta)
     
-
+#Print results
 print("Financial Analysis")
 print( "________________________")
 print(Total_Months)
@@ -59,24 +59,16 @@ print(average)
 print(max_change)
 print(min_change)
 
-with open ("Results", "w") as f:
-    print("Financial Analysis")
-    print( "________________________")
-    print(Total_Months)
-    print(total)
-    print(Delta)
-    print(average)
-    print(max_change)
-    print(min_change)
-    file-Fw 
-    #f.write('Results')
-    #f.write( "________________________")
-   # f.write(Total_Months)
-   # f.write(Total)
-   # f.write(Delta)
-   # f.write(average)
-   #f.write(max_change)
-   # f.write(min_change)
+#Write to text file
+with open ("Results", "w") as f:   
+    f.write(str('Results'))+ "\n"
+    f.write(str( "________________________") + "\n"
+    f.write(str(Total_Months)) + "\n"
+    f.write(str(Total)) + "\n"
+    f.write(str(Delta)) + "\n"
+    f.write(str(average)) + "\n"
+    f.write(str(max_change)) + "\n"
+    f.write(str(min_change)) + "\n"
     
 
 
