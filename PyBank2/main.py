@@ -60,14 +60,23 @@ print(max_change)
 print(min_change)
 
 with open ("Results", "w") as f:
-    f.write('Results')
-    f.write( "________________________")
-    f.write(Total_Months)
-    f.write(Total)
-    f.write(Delta)
-    f.write(average)
-    f.write(max_change)
-    f.write(min_change)
+    print("Financial Analysis")
+    print( "________________________")
+    print(Total_Months)
+    print(total)
+    print(Delta)
+    print(average)
+    print(max_change)
+    print(min_change)
+    file-Fw 
+    #f.write('Results')
+    #f.write( "________________________")
+   # f.write(Total_Months)
+   # f.write(Total)
+   # f.write(Delta)
+   # f.write(average)
+   #f.write(max_change)
+   # f.write(min_change)
     
 
 

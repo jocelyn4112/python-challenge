@@ -36,7 +36,7 @@ with open(output_path) as csvfile:
         votes = candidates_info[candidate]
         percentage = (votes/total_votes) * 100
         percentage = round(percentage)
-        percentage = "%_._%" ## How to print
+        percentage = "%_._%" ## How to print in the proper form?
         candidates_info[candidate] = {"Votes":votes, "Percentage":percentage}
       
 #Calulating winner 
