@@ -61,7 +61,7 @@ print(min_change)
 
 #Write to text file
 with open ("Results", "w") as f:   
-    f.write(str('Results'))+ "\n"
+    f.write(str('Financial Analysis'))+ "\n"
     f.write(str( "________________________")+ "\n"
     f.write(str(Total_Months))+ "\n"
     f.write(str(total))+ "\n"
