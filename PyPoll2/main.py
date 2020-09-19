@@ -36,7 +36,7 @@ with open(output_path) as csvfile:
         votes = candidates_info[candidate]
         percentage = (votes/total_votes) * 100
         percentage = round(percentage)
-        percentage = "%_._%" ## How to print in the proper form?
+        percentage = (str(percentage)) + "%" 
         candidates_info[candidate] = {"Votes":votes, "Percentage":percentage}
       
 #Calulating winner 
@@ -58,11 +58,11 @@ print("Winner: " + Winner)
 
 #Write to a text file 
 with open('Results.txt', 'a+') as f:
-    f.write('Election Results')   
-    f.write("__________________________")
-    f.write(candidates_info)
-    f.write(total_votes)
-    f.write(f'{candidates}: {candidates_info[candidates]["percentage"]} {candidate_info[candidates]["votes"]}')
-    f.write(Max_votes)
-    f.write("__________________________")
+    f.write('Election Results\n')   
+    f.write("__________________________\n")
+    f.write(str(candidates_info))+ "\n"
+    f.write(str(total_votes)) + "\n"
+    f.write(str(f'{candidates}: {candidates_info[candidates]["Percentage"]} {candidates_info[candidates]["Votes"]}')) + "/n"
+    f.write(str(Max_vote)) + '\n'
+    f.write(str("__________________________"))+ "\n"
     f.write(Winner)
