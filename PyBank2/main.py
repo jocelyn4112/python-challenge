@@ -43,11 +43,11 @@ with open(output_path) as csvfile:
     
     #average = statistics.mean([Delta])
         #or
-    #average =Delta/ Total_Months     
+    average = Delta/ Total_Months     
     #Greatest increase - max / month
-    #max_change = max(Delta)
+    max_change = max(Delta)
     #Greatest Decrease - min / month
-    #min_change = min(Delta)
+    min_change = min(Delta)
     
 #Print results
 print("Financial Analysis")
@@ -62,9 +62,9 @@ print(min_change)
 #Write to text file
 with open ("Results", "w") as f:   
     f.write(str('Results'))+ "\n"
-    f.write(str( "________________________") + "\n"
-    f.write(str(Total_Months)) + "\n"
-    f.write(str(Total)) + "\n"
+    f.write(str( "________________________")+ "\n"
+    f.write(str(Total_Months))+ "\n"
+    f.write(str(total))+ "\n"
     f.write(str(Delta)) + "\n"
     f.write(str(average)) + "\n"
     f.write(str(max_change)) + "\n"
