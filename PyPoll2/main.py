@@ -59,8 +59,8 @@ print("Winner: " + Winner)
 #Write to a text file 
 with open('Results.txt', 'a+') as f:
     f.write('Election Results\n')   
-    f.write("__________________________")
-    f.write(str(candidates_info))+ "\n"
+    f.write("__________________________\n")
+    f.write(str(candidates_info))
     f.write(str(total_votes)) + "\n"
     f.write(str(f'{candidates}: {candidates_info[candidates]["Percentage"]} {candidates_info[candidates]["Votes"]}')) + "/n"
     f.write(str(Max_vote)) + '\n'
